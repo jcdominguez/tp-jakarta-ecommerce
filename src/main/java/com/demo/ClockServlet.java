@@ -14,6 +14,10 @@ public class ClockServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
+        LocalDateTime maintenant = LocalDateTime.now();
+
+        request.setAttribute("horaire", maintenant);
+
        request.getRequestDispatcher("WEB-INF/clock.jsp").forward(request, response);
     }
 }
