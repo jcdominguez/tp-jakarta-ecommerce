@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 @WebServlet("/demoform")
 public class DemoFormServlet extends HttpServlet {
 
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         LocalDateTime maintenant = LocalDateTime.now();
@@ -26,5 +27,7 @@ public class DemoFormServlet extends HttpServlet {
 
         String prenom = request.getParameter("prenom");
         response.getWriter().append("<p>Bonjour: "+prenom+"</p>");
+
+        doGet(request, response);
     }
 }
