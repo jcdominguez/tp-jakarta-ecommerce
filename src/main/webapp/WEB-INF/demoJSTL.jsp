@@ -13,7 +13,7 @@
         <p>Ville: <c:out value="${ ville }" /></p>
     </c:forEach>
 
-    <c:if test="${ vide }">
+    <c:if test="${ villes.size() == 0 }">
         <p>Il n'y a aucune ville dans la liste</p>
     </c:if>
   </body>

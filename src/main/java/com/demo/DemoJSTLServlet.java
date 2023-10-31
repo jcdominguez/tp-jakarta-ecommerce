@@ -8,17 +8,19 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 @WebServlet("/demoJSTL")
 public class DemoJSTLServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
-        //String[] villes = { "Paris", "Marseille", "Niort" };
-        String[] villes = new String[0];
-        request.setAttribute("villes", villes);
+        ArrayList<String> villes = new ArrayList<>();
+        villes.add("Paris");
+        villes.add("Marseille");
+        villes.add("Niort");
 
-        request.setAttribute("vide", villes.length == 0);
+        request.setAttribute("villes", villes);
 
        request.getRequestDispatcher("WEB-INF/demoJSTL.jsp").forward(request, response);
     }
