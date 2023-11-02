@@ -16,8 +16,14 @@
         <label>Prenom:</label>
       <!--   <input type='text' name='prenom' minlength="5"/> -->
         <input type='text' name='prenom' value="${prenom}"/>
+        <br/>
    <!--     <label>Nom:</label><input type='text' name='nom' />
-        <label>Age:</label><input type='number' name='age' />-->
+        -->
+         <c:if test="${erreurAge == true}">
+                        <p>Vous devez avoir au moins 18 ans</p>
+                </c:if>
+        <label>Age:</label><input type='number' name='age' value="${age}"/>
+        <br/>
         <input type='submit' value='Envoyer'>
     </form>
   </body>
