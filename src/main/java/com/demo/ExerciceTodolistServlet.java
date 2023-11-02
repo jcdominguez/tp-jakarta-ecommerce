@@ -1,5 +1,6 @@
 package com.demo;
 
+import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -20,21 +21,10 @@ public class ExerciceTodolistServlet extends HttpServlet {
 
     private ArrayList<String> taches = new ArrayList<>();
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
-        response.getWriter().append("<h1>Todolist</h1>");
-
-        response.getWriter().append("<ul>");
-        for(String tache : taches){
-            response.getWriter().append("<li>"+tache+"</li>");
-        }
-        response.getWriter().append("</ul>");
-
-        response.getWriter().append("<form action='todolist' method='POST'>");
-        response.getWriter().append("<label>Nouvelle tache:</label>");
-        response.getWriter().append("<input type='text' name='tache' />");
-        response.getWriter().append("<input type='submit' value='Envoyer'>");
-        response.getWriter().append("</form>");
+        request.setAttribute("taches", taches);
+        request.getRequestDispatcher("WEB-INF/todolist.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
