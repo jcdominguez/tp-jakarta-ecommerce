@@ -17,7 +17,6 @@ public class DemoValidationDonneesServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
-        request.setAttribute("erreurPrenom", false);
         request.getRequestDispatcher("WEB-INF/demovalidation.jsp").forward(request, response);
     }
 
