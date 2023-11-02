@@ -22,6 +22,6 @@ public class DemoJSTLServlet extends HttpServlet {
 
         request.setAttribute("villes", villes);
 
-       request.getRequestDispatcher("WEB-INF/demoJSTL.jsp").forward(request, response);
+        request.getRequestDispatcher("WEB-INF/demoJSTL.jsp").forward(request, response);
     }
 }
