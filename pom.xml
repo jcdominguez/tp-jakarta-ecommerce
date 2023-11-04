@@ -7,9 +7,9 @@
 	<version>0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>jakarta_jsp_tp_validation_formulaire</name>
+	<name>Tp_Pagination_Films</name>
 	<description>
-		jakarta_jsp_tp_validation_formulaire
+		Tp_Pagination_Films
 	</description>
 
 	<properties>
@@ -43,6 +43,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>jakarta_jsp_tp_validation_formulaire</finalName>
+		<finalName>Tp_Pagination_Films</finalName>
 	</build>
 </project>
