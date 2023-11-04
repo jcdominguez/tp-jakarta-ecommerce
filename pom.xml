@@ -7,9 +7,9 @@
 	<version>0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>20231026_poe_demo1</name>
+	<name>jakarta_jsp_tp_validation_formulaire</name>
 	<description>
-		Empty Jakarta EE 10 application.
+		jakarta_jsp_tp_validation_formulaire
 	</description>
 
 	<properties>
@@ -43,6 +43,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>20231026_poe_demo1</finalName>
+		<finalName>jakarta_jsp_tp_validation_formulaire</finalName>
 	</build>
 </project>
