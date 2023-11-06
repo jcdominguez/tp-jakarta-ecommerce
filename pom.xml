@@ -3,13 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.demo</groupId>
-	<artifactId>20231026_poe_demo1</artifactId>
+	<artifactId>tp-panier-ecommerce</artifactId>
 	<version>0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>Tp_Pagination_Films</name>
+	<name>tp-panier-ecommerce</name>
 	<description>
-		Tp_Pagination_Films
+		tp-panier-ecommerce
 	</description>
 
 	<properties>
@@ -43,6 +43,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>Tp_Pagination_Films</finalName>
+		<finalName>tp-panier-ecommerce</finalName>
 	</build>
 </project>
